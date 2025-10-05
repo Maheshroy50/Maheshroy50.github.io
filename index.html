@@ -3,121 +3,257 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahesh Bhoopathi Rao | DevOps & Cloud Enthusiast</title>
+  <title>Mahesh Bhoopathi Rao | DevOps & Cloud Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9fafc;
       color: #222;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
-    h1, h2, h3 {
-      color: #ff4757;
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #0078ff, #00c6ff);
+      color: white;
     }
-    a {
-      color: #0077ff;
-      text-decoration: none;
+
+    header img {
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
     }
-    a:hover {
-      text-decoration: underline;
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
     }
-    img {
-      border-radius: 8px;
-    }
-    .center {
+
+    h2 {
+      color: #0078ff;
+      margin-top: 40px;
       text-align: center;
     }
-    hr {
-      border: none;
-      border-top: 2px solid #ddd;
-      margin: 2em 0;
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
     }
+
+    p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "• ";
+      color: #0078ff;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .project, .cert-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project:hover, .cert-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .cert-card img {
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    .cert-card a, .project a {
+      color: #0078ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .cert-card a:hover, .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f0f3f8;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .social-links a {
+      color: #0078ff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skills-list li {
+      background: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .resume-btn {
+      display: inline-block;
+      background: #0078ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    .resume-btn:hover {
+      background: #005ecb;
+    }
+
   </style>
 </head>
 <body>
-  <div class="center">
-    <img height="150" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="Developer GIF" />
-  </div>
+  <header>
+    <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" alt="Developer Animation" />
+    <h1>Mahesh Bhoopathi Rao</h1>
+    <p>🎓 B.Sc. IT Graduate | ☁️ DevOps & Cloud Enthusiast | 🐍 Python Developer</p>
+    <a class="resume-btn" href="Resume.pdf" target="_blank">📄 View Resume</a>
+  </header>
 
-  <hr>
+  <main>
+    <section class="section" id="about">
+      <h2>🚀 About Me</h2>
+      <p>I’m an enthusiastic IT graduate with a passion for <strong>DevOps, Cloud Infrastructure, and Python Development</strong>. I love exploring how <strong>automation + development + operations</strong> come together to build scalable, secure, and efficient systems.</p>
+    </section>
 
-  <h1>👋 Hi, I'm Mahesh Bhoopathi Rao</h1>
-  <p>🎓 B.Sc. IT Graduate | ☁️ DevOps & Cloud Enthusiast | 🐍 Python Developer</p>
+    <section class="section" id="skills">
+      <h2>⚙️ Skills</h2>
+      <ul class="skills-list">
+        <li>Docker</li>
+        <li>Kubernetes</li>
+        <li>Git & GitHub Actions</li>
+        <li>AWS (EC2, S3, IAM, Route 53, RDS)</li>
+        <li>Terraform</li>
+        <li>Python & Shell Scripting</li>
+        <li>Linux Administration</li>
+        <li>Networking & Security Groups</li>
+      </ul>
+    </section>
 
-  <hr>
+    <section class="section" id="projects">
+      <h2>🧩 Projects</h2>
 
-  <h2>🚀 About Me</h2>
-  <p>I’m an enthusiastic IT graduate with a passion for <strong>DevOps, Cloud Infrastructure, and Python Development</strong>. I love exploring how <strong>automation + development + operations</strong> come together to build scalable, secure, and efficient systems.</p>
+      <div class="project">
+        <h3><a href="https://github.com/Maheshroy50/aws-ec2-static-site-deployment" target="_blank">Static Website Hosting on AWS EC2</a></h3>
+        <p>Deployed a static website on AWS EC2 with IAM, S3, and security groups configuration.</p>
+      </div>
 
-  <hr>
+      <div class="project">
+        <h3><a href="https://github.com/Maheshroy50/ci-cd-pipeline" target="_blank">CI/CD Pipeline with GitHub Actions + Docker + AWS</a></h3>
+        <p>Automated Docker image builds and CI/CD pipelines using GitHub Actions for AWS deployment.</p>
+      </div>
 
-  <h2>⚙️ What I Work With</h2>
-  <ul>
-    <li><strong>DevOps Tools:</strong> Docker, Kubernetes, Jenkins, Git, Ansible</li>
-    <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, IAM, Route 53, RDS, Elastic Beanstalk)</li>
-    <li><strong>Infrastructure as Code:</strong> Terraform, CloudFormation (learning)</li>
-    <li><strong>CI/CD Pipelines:</strong> GitHub Actions, Jenkins automation</li>
-    <li><strong>Monitoring & Logging:</strong> Prometheus, Grafana (basics)</li>
-    <li><strong>Programming:</strong> Python, Shell scripting, HTML/CSS/JS basics</li>
-  </ul>
+      <div class="project">
+        <h3><a href="https://github.com/Maheshroy50/MoodPlay" target="_blank">MoodPlay 🎶</a></h3>
+        <p>AI-powered music app built with SwiftUI + Spotify API to recommend songs based on mood.</p>
+      </div>
+    </section>
 
-  <hr>
+    <section class="section" id="certifications">
+      <h2>🏅 Certifications</h2>
 
-  <h2>🧠 Currently Learning</h2>
-  <ul>
-    <li>Advanced AWS (Lambda, EKS, CodePipeline)</li>
-    <li>Kubernetes cluster management</li>
-    <li>Python for automation</li>
-  </ul>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo">
+          <h3>AWS APAC Solutions Architecture Virtual Experience Program (Forage)</h3>
+          <p>Designed a scalable hosting architecture on Elastic Beanstalk and explained architecture & cost model to client.</p>
+          <p><strong>Date:</strong> Sep 2025</p>
+          <a href="https://www.theforage.com/virtual-experience/programs/aws-apac-solution-architecture" target="_blank">View Certificate</a>
+        </div>
 
-  <hr>
+        <div class="cert-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Deloitte.svg" alt="Deloitte Logo">
+          <h3>Deloitte Australia Technology Job Simulation (Forage)</h3>
+          <p>Completed coding tasks and proposed a solution for creating a client dashboard.</p>
+          <p><strong>Date:</strong> Aug 2025</p>
+          <a href="https://www.theforage.com/virtual-experience/programs/deloitte-technology" target="_blank">View Certificate</a>
+        </div>
 
-  <h2>🛠 Projects</h2>
-  <ul>
-    <li><a href="https://github.com/Maheshroy50/aws-ec2-static-site-deployment">Static Website Deployment on AWS EC2</a></li>
-    <li><a href="https://github.com/Maheshroy50/ci-cd-pipeline">CI/CD Pipeline with GitHub Actions + Docker + AWS</a></li>
-    <li><a href="https://github.com/Maheshroy50/MoodPlay">MoodPlay 🎶 – AI-powered music app with SwiftUI + Spotify API</a></li>
-  </ul>
+        <div class="cert-card">
+          <img src="https://securityblue.team/wp-content/uploads/2021/06/sbt-logo.png" alt="Security Blue Team">
+          <h3>Security Blue Team – Introduction to Python</h3>
+          <p>Hands-on Python scripting and network port scanner development for security tasks.</p>
+          <p><strong>Date:</strong> 2025</p>
+          <a href="https://securityblue.team/training/introduction-to-python/" target="_blank">View Course</a>
+        </div>
 
-  <hr>
+        <div class="cert-card">
+          <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy Logo">
+          <h3>DevOps Masterclass – Udemy (53.5 hours)</h3>
+          <p>Learned CI/CD, automation, cloud, and containerization fundamentals.</p>
+          <a href="https://www.udemy.com/course/devops-masterclass/" target="_blank">View Course</a>
+        </div>
 
-  <h2>🎯 Goals</h2>
-  <ul>
-    <li>Become a skilled <strong>DevOps Engineer</strong></li>
-    <li>Contribute to <strong>open-source DevOps tools</strong></li>
-    <li>Automate everything I can 🚀</li>
-  </ul>
+        <div class="cert-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Computer-hardware.jpg" alt="Hardware Image">
+          <h3>Hardware & Networking – Systech</h3>
+          <p>Hands-on training in computer hardware and networking fundamentals.</p>
+          <p><strong>Date:</strong> May 2018</p>
+        </div>
+      </div>
+    </section>
 
-  <hr>
+    <section class="section" id="contact">
+      <h2>📫 Contact</h2>
+      <p>Let’s connect! Feel free to reach out.</p>
+      <div class="social-links">
+        <a href="mailto:maheshbhoopati53@gmail.com">Email</a> |
+        <a href="https://linkedin.com/in/maheshbhoopathi" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Maheshroy50" target="_blank">GitHub</a>
+      </div>
+    </section>
+  </main>
 
-  <h2>📊 GitHub Stats</h2>
-  <div class="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=Maheshroy50&show_icons=true&theme=radical" />
-    <img src="https://streak-stats.demolab.com?user=Maheshroy50&theme=radical" />
-  </div>
-
-  <hr>
-
-  <h2>📫 Let’s Connect</h2>
-  <ul>
-    <li>💼 <a href="https://linkedin.com/in/maheshrao500">LinkedIn</a></li>
-    <li>📧 <a href="mailto:maheshbhoopati53@gmail.com">maheshbhoopati53@gmail.com</a></li>
-  </ul>
-
-  <hr>
-
-  <div class="center">
-    <h3>🛠 Tools & Technologies</h3>
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" height="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" height="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" height="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" height="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" height="40" />
-  </div>
+  <footer>
+    <p>© 2025 Mahesh Bhoopathi Rao | Built with ❤️ using HTML & CSS</p>
+  </footer>
 </body>
 </html>
